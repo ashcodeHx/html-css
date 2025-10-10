@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: 'work Sans', Helvetica, sans-serif;
+            /*
+             Medidas Absolutas
+             cm(centimetro), mm(milimetro), in(polegadas), 
+             px(pixels), pt(ponto), pc(paica)
+            
+             Medidas Relativas
+             em(tamanho relativa ao tamanho da fonte atual)
+             ex(tamanho relativa ao altura X de uma fonte)
+             rem(e a fonte configurada no root"body")
+             vw(viewwidth e a largura da viewport"tamanho da tela")
+             vh(viewheight e a altura da viewport"tamanho da tela")
+             %(percentagem)
+
+             16px geralmente e igual a 1em
+             Devido a diversidade de dispositivos recomenda-se o uso do "em".
+
+             NB: A w3c recomenda o uso do "px" e do "em".
+            */
+            font-size: 1em;
+            font-weight: normal;
+            font-style: italic;
+            text-decoration: underline;
+            /*
+            Weight(peso):lighter, normal, bold, bolder
+            */
+        }
+        h1{
+           /* 
+            font-family:'work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+
+            /* Shorthand(mao pequena, maozinha)
+
+               Ordem das shorthands:
+               font-style -> font-weight -> font-size -> font-family            
+            */
+            font: italic bolder 3em 'work Sans', sans-serif;
+        }
+        h2{
+            font: bolder 3em 'work Sans', sans-serif;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis illum non, 
+       officiis, ut quo delectus minima sapiente fugiat magni, quasi nisi ullam 
+       nesciunt totam est? Minima laudantium atque sit esse.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptatum,
+       neque commodi, iste iure quidem atque, deserunt repellat est eum illum eius 
+       mollitia? Omnis error enim porro repudiandae delectus non.</p>
+    <h2>Subtitulo do exercicio</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus placeat 
+       ullam consectetur nulla in neque, distinctio ab accusamus facilis qui. Iure 
+       exercitationem necessitatibus, corporis perferendis excepturi quisquam odit 
+       facilis ipsum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nesciunt 
+       facilis neque minus placeat sed architecto fugit velit vero tempore! Doloremque 
+       eaque voluptates odio repudiandae ab fugit eveniet aliquid itaque.</p>
+
+</body>
+</html>

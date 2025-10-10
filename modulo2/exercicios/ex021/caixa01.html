@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Modelo de caixa</title>
+    <style>
+        h1{ /* box-level */
+            /* Se quiser transformar o box-level em inline-level basta digitar o seguinte comando: 
+
+            display: inline;
+            */
+
+            background-color: lightgrey;
+            height: 300px;
+            width: 300px;
+         
+            border: 10px solid darkslategray;
+
+            padding: 10px;
+
+           /*  
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+
+            A clausula 'auto' serve para centralizar a nossa box-level neste caso o nosso <h1>
+           */
+
+            margin: 20px auto 40px auto;
+
+            /*
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+            */
+
+            outline: 5px dashed salmon;
+        }
+
+        a{  /* inline-level */
+            /* Se quiser transformar o inline-level em box-level basta digitar o seguinte comando:  
+
+               display: block;
+            */
+           
+            /*
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            */
+
+            border:10px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Paragrafos tambem sao exemplo de box-level, mas os <a href="#">links sao exemplos de caixas inline-level</a> vamos ver como isso funciona.</p>
+    
+</body>
+</html>
