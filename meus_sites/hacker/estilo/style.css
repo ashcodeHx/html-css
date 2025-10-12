@@ -15,6 +15,11 @@
     font-style: normal;
 }
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 body{
     background-color: #000000;
     font-family: Arial, Helvetica, sans-serif;
@@ -29,6 +34,7 @@ header{
 header h1{
     font-family: 'Hacker Fonte 2', cursive;
     text-align: center;
+    font-size: 4em;
 }
 
 header p{
@@ -57,6 +63,26 @@ main h2{
     color: #0a520a;
 }
 
+main p{
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+main strong{
+    font-style: italic;
+    font-weight: bolder;
+}
+
+main img{
+    width: 100%;
+}
+
+main img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
 main aside{
     background-color: #4b691d;
     border-radius: 5px;
@@ -77,6 +103,7 @@ main aside ul{
     padding: 10px 10px 10px 10px;
     list-style-type: square;
     list-style-position: inside;
+    font-size: 1.2em;
 }
 
 footer{
@@ -85,4 +112,5 @@ footer{
 
 footer p{
     text-align: center;
+    font-weight: bolder;
 }
