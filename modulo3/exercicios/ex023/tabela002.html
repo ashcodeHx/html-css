@@ -20,6 +20,42 @@
             padding: 10px;    
         }
 
+        /* 
+            Efeito Zebrado nas Tabelas
+
+            tbody > tr:nth-child(2n){
+              background-color: lightgray;
+            }
+
+            Efeito Zebrado na Tabelas, o efeito comeca nas celulas IMPARES
+          
+            tbody > tr:nth-child(odd){
+             background-color: lightgray;
+            }
+        
+            Tipos de efeitos zebrados: 
+
+            2n  / even   - efeito zebrado par
+            odd / 2n-1  - efeito zebrado impar
+        */
+
+        tbody > tr:nth-child(odd){
+            background-color: blue;
+            font-weight: bold;
+        }
+
+        tbody > tr:nth-child(even){
+            background-color: yellow;
+            text-decoration: underline;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         td.numero{
             text-align: right;
         }
@@ -44,10 +80,11 @@
               tr, td, th
     -->
     <table>
+        <caption>Populacao das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>Populacao</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">Populacao</th>
             </tr>
         </thead>
 
@@ -164,7 +201,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="numero"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
