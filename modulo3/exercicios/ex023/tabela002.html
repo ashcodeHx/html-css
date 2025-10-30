@@ -13,6 +13,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         
         td, th{
@@ -21,22 +22,10 @@
         }
 
         /* 
-            Efeito Zebrado nas Tabelas
-
-            tbody > tr:nth-child(2n){
-              background-color: lightgray;
-            }
-
-            Efeito Zebrado na Tabelas, o efeito comeca nas celulas IMPARES
-          
-            tbody > tr:nth-child(odd){
-             background-color: lightgray;
-            }
-        
             Tipos de efeitos zebrados: 
 
-            2n  / even   - efeito zebrado par
-            odd / 2n-1  - efeito zebrado impar
+            even / 2n   - efeito zebrado par
+            odd  / 2n-1  - efeito zebrado impar
         */
 
         tbody > tr:nth-child(odd){
@@ -64,6 +53,17 @@
             background-color: gray;
             color: white;
         }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        
+        p{
+            text-align: justify;
+        }
+
     </style>
 </head>
 <body>
@@ -205,6 +205,10 @@
                 <td class="numero"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
-    </table>    
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cupiditate placeat at qui natus aperiam mollitia, provident soluta a illo iusto quaerat architecto magnam sunt tempora facere quisquam dignissimos nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, maxime optio eos atque quod harum corrupti ipsa perspiciatis fugit illo animi, doloremque esse exercitationem? Aspernatur illo officiis accusamus magni maxime? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, eius nam. Ad placeat aliquid ab ex reiciendis nihil eius tempore earum sit quaerat. Aspernatur expedita ducimus natus, sapiente fuga rerum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, quam? Doloremque quidem nobis nisi ullam. Sequi maiores eligendi quia? Facere inventore laboriosam harum odit itaque reprehenderit illo accusantium animi hic! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, porro. Voluptatum fuga repellat consectetur dolorem quos aut magni odio vitae tempora neque ad totam dolor, molestiae doloribus illum! Itaque, veritatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nobis mollitia aut sequi, nam ipsum praesentium quod dolorum blanditiis minus neque temporibus ad veniam ducimus vero nemo voluptate magnam? Sequi!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eum, ab, impedit corrupti aut nemo non expedita consequuntur blanditiis nulla ducimus nesciunt fuga maxime deserunt dicta qui itaque minus doloremque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem facere reprehenderit quasi doloribus ratione eaque quis corrupti quam ullam animi quo, inventore similique cumque consequatur incidunt, mollitia iste esse accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente debitis saepe omnis culpa dolore fugit mollitia modi voluptatum vel quia nam quisquam rem natus pariatur deserunt incidunt consectetur, reiciendis porro! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate molestiae, laudantium mollitia velit voluptates natus. Accusamus, ex. Nesciunt quidem iure pariatur sunt, doloribus error, quibusdam nam, dicta explicabo ipsum autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dicta qui corrupti libero optio dolores adipisci, omnis aspernatur perspiciatis numquam eveniet molestias possimus totam consequatur blanditiis temporibus ullam vitae. Sed. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit sunt laboriosam, aperiam reiciendis id fuga sequi aspernatur distinctio dolorem illo! Cum voluptas dolore libero unde officia nostrum maxime laboriosam assumenda.</p>
+
 </body>
 </html>
